@@ -1,0 +1,219 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "type": "integer"
+        },
+        "role": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "screenname": {
+            "type": "string"
+        },
+        "email": {
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "isVerified": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "address",
+                "isVerified"
+            ]
+        },
+        "phone": {
+            "type": "object",
+            "properties": {
+                "number": {
+                    "type": "string"
+                },
+                "isVerified": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "number",
+                "isVerified"
+            ]
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "countryCode": {
+                    "type": "string"
+                },
+                "regionCode": {
+                    "type": "string"
+                },
+                "languageCode": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "locality": {
+                    "type": "string"
+                },
+                "addressApproximate": {
+                    "type": "string"
+                },
+                "geo": {
+                    "type": "object",
+                    "properties": {
+                        "lat": {
+                            "type": "number"
+                        },
+                        "lon": {
+                            "type": "number"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "lat",
+                        "lon"
+                    ]
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "countryCode",
+                "regionCode",
+                "languageCode",
+                "postalCode",
+                "locality",
+                "addressApproximate",
+                "geo"
+            ]
+        },
+        "biography": {
+            "type": "string"
+        },
+        "freeNotes": {
+            "type": "string"
+        },
+        "imageUrls": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "additionalItems": false
+        },
+        "otherUrls": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "additionalItems": false
+        },
+        "criticalCategories": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "additionalItems": false
+        },
+        "hashtags": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "isVerified": {
+                            "type": "boolean"
+                        },
+                        "isRequired": {
+                            "type": "boolean"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "name",
+                        "isVerified",
+                        "isRequired"
+                    ]
+                }
+            ],
+            "additionalItems": false
+        },
+        "giveOffers": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "totalSlots": {
+                            "type": "integer"
+                        },
+                        "availableSlots": {
+                            "type": "integer"
+                        },
+                        "assignedSlots": {
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "name",
+                        "totalSlots",
+                        "availableSlots",
+                        "assignedSlots"
+                    ]
+                }
+            ],
+            "additionalItems": false
+        },
+        "isFirstResponder": {
+            "type": "boolean"
+        },
+        "stillHaveToPhysicallyGoToWork": {
+            "type": "boolean"
+        },
+        "redFlag": {
+            "type": "boolean"
+        },
+        "lastUpdated": {
+            "type": "string"
+        },
+        "createdAt": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "userId",
+        "role",
+        "name",
+        "screenname",
+        "email",
+        "phone",
+        "address",
+        "biography",
+        "freeNotes",
+        "imageUrls",
+        "otherUrls",
+        "criticalCategories",
+        "hashtags",
+        "giveOffers",
+        "isFirstResponder",
+        "stillHaveToPhysicallyGoToWork",
+        "redFlag",
+        "lastUpdated",
+        "createdAt"
+    ]
+}

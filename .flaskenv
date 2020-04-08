@@ -1,0 +1,3 @@
+FLASK_ENV=development
+FLASK_APP=voluntarily.app:create_app
+SECRET_KEY=75a87bd9debdeefebb38411e3b1de842774b88c8bde5f504

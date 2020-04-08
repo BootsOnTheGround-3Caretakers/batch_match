@@ -1,0 +1,51 @@
+{
+    "userId": 100,
+    "role": "giver",
+    "name": "Joe Smith",
+    "screenname": "joesmith",
+    "email": {
+        "address": "joesmith@gmail.com",
+        "isVerified": true
+    },
+    "phone": {
+        "number": "(406) 555-1212",
+        "isVerified": true
+    },
+    "address": {
+        "countryCode": "US",
+        "regionCode": "OR",
+        "languageCode": "en",
+        "postalCode": "97219",
+        "locality": "Portland",
+        "addressApproximate": "123 SE Street Ave.",
+        "geo": {
+            "lat": 29.1300,
+            "lon": -71.000
+        }
+    },
+    "biography": "I am a good person.",
+    "freeNotes": "This person is a good person.",
+    "imageUrls": ["https://foo.com/foo.jpg"],
+    "otherUrls": ["https://foo.com/"],
+    "criticalCategories": ["medicalWorker"],
+    "hashtags": [
+        {
+            "name": "over70",
+            "isVerified": true,
+            "isRequired": true
+        }
+    ],
+    "giveOffers": [
+        {
+            "name": "groceryDelivery",
+            "totalSlots": 10,
+            "availableSlots": 0,
+            "assignedSlots": 10
+        }
+    ],
+    "isFirstResponder": true,
+    "stillHaveToPhysicallyGoToWork": true,
+    "redFlag": false,
+    "lastUpdated": "2019-01-20 HH:mm:ss",
+    "createdAt": "2019-01-20 HH:mm:ss"
+}

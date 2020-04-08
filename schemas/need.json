@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "type": "integer"
+        },
+        "needRequestName": {
+            "type": "string"
+        },
+        "totalSlots": {
+            "type": "integer"
+        },
+        "matchedGivers": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "additionalItems": false
+        },
+        "hashtags": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "isVerified": {
+                            "type": "boolean"
+                        },
+                        "isRequired": {
+                            "type": "boolean"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "name",
+                        "isVerified",
+                        "isRequired"
+                    ]
+                }
+            ],
+            "additionalItems": false
+        },
+        "cluster": {
+            "type": "object",
+            "properties": {
+                "userRequestedLimit": {
+                    "type": "integer"
+                },
+                "adminRequestedLimit": {
+                    "type": "integer"
+                },
+                "numberOfAssignedGivers": {
+                    "type": "integer"
+                },
+                "remainingGiversNeeded": {
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "userRequestedLimit",
+                "adminRequestedLimit",
+                "numberOfAssignedGivers",
+                "remainingGiversNeeded"
+            ]
+        },
+        "priority": {
+            "type": "integer"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "userId",
+        "needRequestName",
+        "totalSlots",
+        "matchedGivers",
+        "hashTags",
+        "cluster",
+        "priority"
+    ]
+}

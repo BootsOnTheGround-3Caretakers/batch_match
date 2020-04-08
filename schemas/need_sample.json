@@ -1,0 +1,32 @@
+{
+    "userId": 123,
+    "needRequestName": "blah",
+    "totalSlots": 123,
+    "matchedGivers": [5, 6],
+    "address": {
+        "countryCode": "US",
+        "regionCode": "OR",
+        "languageCode": "en",
+        "postalCode": "97219",
+        "locality": "Portland",
+        "addressApproximate": "123 SE Street Ave.",
+        "geo": {
+            "lat": 29.1300,
+            "lon": -71.000
+        }
+    },
+    "hashTags": [
+        {
+            "name": "blah",
+            "isVerified": true,
+            "isRequired": true
+        }
+    ],
+    "cluster": {
+        "userRequestedLimit": 10,
+        "adminRequestedLimit": 10,
+        "numberOfAssignedGivers": 5,
+        "remainingGiversNeeded": 5
+    },
+    "priority": 5
+}
